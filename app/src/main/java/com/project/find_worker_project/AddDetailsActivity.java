@@ -22,7 +22,6 @@ public class AddDetailsActivity extends AppCompatActivity {
     ImageView imageView;
     ImageView button;
     ImageView backButton;
-    EditText serviceTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,6 @@ public class AddDetailsActivity extends AppCompatActivity {
 
         confirmbtn = findViewById(R.id.btnConfirm);
         backButton = findViewById(R.id.backbtn);
-        serviceTitle = findViewById(R.id.inputService);
 
         confirmbtn.setOnClickListener(new View.OnClickListener() {
             @Override
