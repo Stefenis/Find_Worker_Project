@@ -43,6 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
         android:id="@+id/inputName"
         android:layout_width="0dp"
@@ -63,42 +64,19 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutHeader" />
-
-    <EditText
-        android:id="@+id/inputService"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/baseline_subtitles_24"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Service Name"
-        android:inputType="text"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+        app:layout_constraintVertical_bias="0.464" />
 
     <EditText
         android:id="@+id/inputPhoneNumber"
         android:layout_width="349dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="108dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/baseline_local_phone_24"
         android:drawablePadding="10dp"
@@ -111,16 +89,16 @@
         android:paddingBottom="10dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/inputAddress"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="@+id/inputAddress"
-        app:layout_constraintTop_toBottomOf="@+id/inputAddress" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputAddress" />
 
     <EditText
         android:id="@+id/inputAddress"
         android:layout_width="349dp"
         android:layout_height="333dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/input_bg2"
         android:drawableLeft="@drawable/baseline_report_problem_24"
         android:drawablePadding="10dp"
@@ -133,10 +111,11 @@
         android:paddingBottom="270dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/inputPhoneNumber"
         app:layout_constraintEnd_toEndOf="@+id/inputName"
-        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="@+id/inputName"
-        app:layout_constraintTop_toBottomOf="@+id/inputService" />
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+        app:layout_constraintVertical_bias="0.931" />
 
     <Button
         android:id="@+id/btnConfirm"
@@ -152,7 +131,8 @@
         app:layout_constraintEnd_toEndOf="@+id/inputPhoneNumber"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/inputPhoneNumber"
-        app:layout_constraintTop_toBottomOf="@+id/inputPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPhoneNumber"
+        app:layout_constraintVertical_bias="0.968" />
 
     <ImageView
         android:id="@+id/camerabtn"
